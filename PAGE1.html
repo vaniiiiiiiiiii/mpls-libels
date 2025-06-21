@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PRAMPLS</title>
+</head>
+<body style="
+  margin:0;
+  padding:0;
+  background:url('gambar/BG\ PAGE\ .jpg') no-repeat center center fixed;
+  background-size:cover;
+  overflow:hidden;
+  font-family:Arial, sans-serif;
+  text-align:center;
+">
+
+  <!-- Container tombol -->
+  <div style="margin-top:160px;">
+
+    <!-- Tombol ABOUT PRAMPLS -->
+    <a href="play.html" onclick="playClick()"
+       onmouseover="this.style.transform='scale(1.05)'"
+       onmouseout="this.style.transform='scale(1)'"
+       onmousedown="this.style.transform='scale(0.95)'"
+       onmouseup="this.style.transform='scale(1.05)'"
+       style="
+        display:inline-block;
+        background-image: url('gambar/bg\ play.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 80px;
+        line-height: 80px;
+        color: rgb(240, 183, 130);
+        font-size: 28px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px #000;
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+       ">
+      PRAMPLS?
+    </a><br>
+
+    <!-- Tombol PENUGASAN -->
+    <a href="menu.html" onclick="playClick()"
+       onmouseover="this.style.transform='scale(1.05)'"
+       onmouseout="this.style.transform='scale(1)'"
+       onmousedown="this.style.transform='scale(0.95)'"
+       onmouseup="this.style.transform='scale(1.05)'"
+       style="
+        display:inline-block;
+        background-image: url('gambar/bg\ play.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 80px;
+        line-height: 80px;
+        color: rgb(240, 183, 130);
+        font-size: 28px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 2px 2px #000000;
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+       ">
+      PENUGASAN
+    </a>
+
+  </div>
+
+  <!-- Audio klik -->
+  <audio id="clickSound" src="audie/klik.unknown" preload="auto"></audio>
+
+  <script>
+    function playClick() {
+      const sound = document.getElementById('clickSound');
+      sound.currentTime = 0;
+      sound.play();
+    }
+  </script>
+
+</body>
+</html>
